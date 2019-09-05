@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+.back{
+    background:url("img/dov-back.jpg");
+    background-size: cover;
+    position: absolute;
+    top: -1vh;
+    left:-1vw;
+    width: 102vw;
+    height: 102vh;
+    filter: blur(4px);
+    transition: filter 1s;
+}
+
+.front{
+    background:url("img/dov-front.png");
+    background-size: cover;
+    position: absolute;
+    bottom: -1vh;
+    right: 3vw;
+    width: 50vw;
+    padding-bottom: 30%;
+    filter:blur(4px);
+}
+
+
+.front:hover{
+    filter: blur(0px);
+}
+
+.back:hover {
+    filter: blur(0px);
+}
